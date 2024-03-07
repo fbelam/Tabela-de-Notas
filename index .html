@@ -9,7 +9,8 @@
     <title>SENAI - NOTAS</title>
 </head>
 <body>
-    <table class="table">
+  <div class="item" >
+    <table class="table" id ="todo_List">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -24,7 +25,7 @@
         </thead>
         <tbody>
           <tr>
-            <th>1</th>
+            <th id="todoitem">1</th>
             <td><input type="text" class="form-control" id="" placeholder="nome"></td>
             <td><input type="number" value="0" class="form-control" id="n1_aluno_0"></td>
             <td><input type="number" value="0" class="form-control" id="n2_aluno_0"></td>
@@ -33,7 +34,7 @@
             <td><output id="media_aluno_0"></output></td>
             <td><output id="resultado_aluno_0"></output></td>
           </tr>
-        <th>2</th>
+        <th id="todoitem">2</th>
         <td><input type="text" class="form-control" id="" placeholder="nome"></td>
         <td><input type="number" value="0" class="form-control" id="n1_aluno_1"></td>
         <td><input type="number" value="0" class="form-control" id="n2_aluno_1"></td>
@@ -42,7 +43,7 @@
         <td><output id="media_aluno_1"></output></td>
         <td><output id="resultado_aluno_1"></output></td>
       </tr>
-       <th>3</th>
+       <th id="todoitem">3</th>
             <td><input type="text" class="form-control" id="" placeholder="nome"></td>
             <td><input type="number" value="0" class="form-control" id="n1_aluno_2"></td>
             <td><input type="number" value="0" class="form-control" id="n2_aluno_2"></td>
@@ -51,7 +52,7 @@
             <td><output id="media_aluno_2"></output></td>
             <td><output id="resultado_aluno_2"></output></td>
           </tr>
-          <th>4</th>
+        <th id="todoitem">4</th>
           <td><input type="text" class="form-control" id="" placeholder="nome"></td>
           <td><input type="number" value="0" class="form-control" id="n1_aluno_3"></td>
           <td><input type="number" value="0" class="form-control" id="n2_aluno_3"></td>
@@ -62,6 +63,8 @@
         </tr>
         </tbody>
       </table>
+    </div>
+    <button onclick="criarItem()">Criar</button>
       <button onclick="verificar()">Verificar</button>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -29,5 +29,24 @@ function verificar(){
         resultado.style.backgroundColor = "red";
     }
     }
+}
 
+var num = 5;
+function criarItem(){
+    num = num + 1;
+    const item = document.createElement('tbody');
+    item.classList.add('todoitem');
+    item.innerHTML = `
+    <tr>
+    <th>${num}</th>
+    <td><input type="text" class="form-control" id="" placeholder="nome"></td>
+    <td><input type="number" value="0" class="form-control" id="n1_aluno_0"></td>
+    <td><input type="number" value="0" class="form-control" id="n2_aluno_0"></td>
+    <td><input type="number" value="0" class="form-control" id="n3_aluno_0"></td>
+    <td><input type="number" value="0" class="form-control" id="n4_aluno_0"></td>
+    <td><output id="media_aluno_0"></output></td>
+    <td><output id="resultado_aluno_0"></output></td>
+    </tr>
+     `;
+    document.getElementById('todo_List').appendChild(item);
 }
